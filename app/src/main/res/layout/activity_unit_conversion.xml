@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".unit_conversion">
+
+    <Button
+        android:id="@+id/length_conversion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginVertical="8dp"
+        android:text="长度转换" />
+    <Button
+        android:id="@+id/area_conversion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginVertical="8dp"
+        android:layout_toLeftOf="@id/volume_conversion"
+        android:layout_centerInParent="true"
+        android:text="面积转换"
+        />
+    <Button
+        android:id="@+id/volume_conversion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginVertical="8dp"
+
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:text="体积转换"
+        />
+    <Button
+        android:id="@+id/weight_conversion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginVertical="8dp"
+        android:layout_below="@id/length_conversion"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:text="重量转换"
+        />
+    <Button
+        android:id="@+id/velocity_conversion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginVertical="8dp"
+        android:layout_below="@id/area_conversion"
+        android:layout_toRightOf="@id/weight_conversion"
+        android:layout_centerInParent="true"
+        android:text="速度转换"
+        />
+</RelativeLayout>
